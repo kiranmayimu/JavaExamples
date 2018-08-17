@@ -4,7 +4,7 @@
  * the express written consent of EVRY FS is strictly prohibited.
  * Copyright © 2018 EVRY. ALL RIGHTS RESERVED
  */
-package com.exp.numbers;
+package com.exp.sorting;
 
 /**
  * @author kiranmayi.mu
