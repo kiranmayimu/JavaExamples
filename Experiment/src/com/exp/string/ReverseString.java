@@ -20,13 +20,11 @@ public class ReverseString {
         Scanner s = new Scanner(System.in);
         String str = s.nextLine();
 
-        char[] array = str.toCharArray();
-
         String reversedStr = "";
 
-        for (int i = array.length - 1; i >= 0; i--) {
+        for (int i = str.length() - 1; i >= 0; i--) {
 
-            reversedStr = reversedStr + array[i];
+            reversedStr = reversedStr + str.charAt(i);
         }
 
         System.out.println("reverse string is = " + reversedStr);

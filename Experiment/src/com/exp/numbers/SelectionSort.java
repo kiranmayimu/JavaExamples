@@ -4,31 +4,34 @@
  * the express written consent of EVRY FS is strictly prohibited.
  * Copyright © 2018 EVRY. ALL RIGHTS RESERVED
  */
-package com.exp;
+package com.exp.numbers;
 
 /**
  * @author kiranmayi.mu
  *
  */
-public class BubbleSort {
+public class SelectionSort {
 
-    public static void bubble_sort(final int array[]) {
+    public static void selection_sort(final int array[]) {
 
-        for (int i = 0; i < (array.length - 1); i++) {
+        int min, temp = 0;
 
-            for (int j = 0; j < (array.length - 1 - i); j++) {
+        for (int i = 0; i < array.length; i++) {
 
-                int k = j + 1;
+            min = i;
 
-                if (array[j] > array[k]) {
+            for (int j = i + 1; j < array.length; j++) {
 
-                    // array[j].compareTo(array[k]) > 0
+                if (array[j] < array[min]) {
 
-                    int temp = array[k];
-                    array[k] = array[j];
-                    array[j] = temp;
+                    min = j;
+
                 }
             }
+
+            temp = array[i];
+            array[i] = array[min];
+            array[min] = temp;
         }
     }
 
@@ -43,7 +46,7 @@ public class BubbleSort {
 
         int[] input = new int[] { 21, 3, 10, 7, 1 };
 
-        bubble_sort(input);
+        selection_sort(input);
 
         printNumbers(input);
     }

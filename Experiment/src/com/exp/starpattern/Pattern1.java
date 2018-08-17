@@ -4,33 +4,23 @@
  * the express written consent of EVRY FS is strictly prohibited.
  * Copyright © 2018 EVRY. ALL RIGHTS RESERVED
  */
-package com.exp;
+package com.exp.starpattern;
 
 /**
  * @author kiranmayi.mu
  *
  */
-public class PrimeNumbers {
+public class Pattern1 {
 
     public static void main(final String[] args) {
 
-        int temp = 0;
+        for (int i = 1; i <= 4; i++) {
 
-        for (int i = 2; i < 10; i++) {
+            for (int j = 1; j <= i; j++) {
 
-            for (int j = 2; j < i; j++) {
-
-                if ((i % j) == 0) {
-                    temp = temp + 1;
-                }
+                System.out.print("*" + " ");
             }
-
-            if (temp == 0) {
-                System.out.println(i);
-            } else {
-                temp = 0;
-            }
+            System.out.println(" ");
         }
-
     }
 }

@@ -4,7 +4,7 @@
  * the express written consent of EVRY FS is strictly prohibited.
  * Copyright © 2017 EVRY. ALL RIGHTS RESERVED
  */
-package com.exp;
+package com.exp.numbers;
 
 public class FindLargestSmallestNumber {
 

@@ -27,7 +27,7 @@ public class TreeSetDemo {
 
         t.add("A");
 
-        // t.add(1); // ClassCastException
+        // t.add(1); // ClassCastException heterogeneous elements not allowed in TreeMap
 
         // t.add(null); //null ptr
 

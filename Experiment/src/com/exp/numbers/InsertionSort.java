@@ -4,7 +4,7 @@
  * the express written consent of EVRY FS is strictly prohibited.
  * Copyright © 2018 EVRY. ALL RIGHTS RESERVED
  */
-package com.exp;
+package com.exp.numbers;
 
 /**
  * @author kiranmayi.mu
@@ -25,7 +25,6 @@ public class InsertionSort {
             while ((j > 0) && (input[j - 1] > temp)) {
 
                 input[j] = input[j - 1];
-
                 j = j - 1;
             }
             input[j] = temp;

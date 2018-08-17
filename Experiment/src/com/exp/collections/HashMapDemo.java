@@ -30,6 +30,7 @@ public class HashMapDemo {
         map.put(1, "moni");
         map.put("ps", 3);
         map.put(3, "narga");
+        map.put(3, "nargis");
         map.put(7, "tirgsla");
         map.put(null, "tirgsla");
 

@@ -4,22 +4,29 @@
  * the express written consent of EVRY FS is strictly prohibited.
  * Copyright © 2018 EVRY. ALL RIGHTS RESERVED
  */
-package com.exp;
+package com.exp.numbers;
 
 /**
  * @author kiranmayi.mu
  *
  */
-public class FindEvenOrOddWithoutModulus {
+public class CheckPrimeNumber {
 
     public static void main(final String[] args) {
 
-        int n = 5;
+        int num = 19;
 
-        if (((n / 2) * 2) == n) {
-            System.out.println("even number");
-        } else {
-            System.out.println("odd number");
+        boolean isPrime = true;
+
+        for (int i = 2; i < num; i++) {
+
+            if ((num % i) == 0) {
+                isPrime = false;
+            }
+        }
+
+        if (isPrime) {
+            System.out.println(num + " is a prime number");
         }
     }
 }

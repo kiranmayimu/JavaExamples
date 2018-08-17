@@ -30,10 +30,11 @@ public class TreeMapDemo {
         t.put(4, "b");
         t.put(2, "c");
         t.put(1, "d");
+        t.put(6, null);
 
-        // t.put("heterogeneous", "d"); // ClassCastExcep
+        // t.put("heterogeneous", "d"); // ClassCastExcep heterogeneous elements not allowed in TreeMap
 
-        // t.put(null, "d"); // Null pointer
+        // t.put(null, "d"); // Null pointer key cannot be null
 
         System.out.println(t);
     }

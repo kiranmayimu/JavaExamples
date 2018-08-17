@@ -4,29 +4,25 @@
  * the express written consent of EVRY FS is strictly prohibited.
  * Copyright © 2018 EVRY. ALL RIGHTS RESERVED
  */
-package com.exp;
+package com.exp.numbers;
 
 /**
  * @author kiranmayi.mu
  *
  */
-public class CheckPrimeNumber {
+public class FibonacciSeries {
 
     public static void main(final String[] args) {
 
-        int num = 19;
+        int n = 3, t1 = 0, t2 = 1;
 
-        boolean isPrime = true;
+        for (int i = 1; i <= n; ++i) {
 
-        for (int i = 2; i < num; i++) {
+            System.out.print(t1 + " ");
 
-            if ((num % i) == 0) {
-                isPrime = false;
-            }
-        }
-
-        if (isPrime) {
-            System.out.println(num + " is a prime number");
+            int sum = t1 + t2;
+            t1 = t2;
+            t2 = sum;
         }
     }
 }
