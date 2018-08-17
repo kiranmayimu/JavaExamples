@@ -4,7 +4,7 @@
  * the express written consent of EVRY FS is strictly prohibited.
  * Copyright © 2018 EVRY. ALL RIGHTS RESERVED
  */
-package com.corejava;
+package com.exp.corejava;
 
 /**
  * @author kiranmayi.mu
