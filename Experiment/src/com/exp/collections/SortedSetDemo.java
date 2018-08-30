@@ -6,32 +6,31 @@
  */
 package com.exp.collections;
 
+import java.util.SortedSet;
 import java.util.TreeSet;
 
 /**
  * @author kiranmayi.mu
  *
  */
-public class TreeSetDemo {
+public class SortedSetDemo {
 
     public static void main(final String[] args) {
 
-        TreeSet t = new TreeSet();
-
-        t.add("A");
+        SortedSet t = new TreeSet();
         t.add("B");
+        t.add("A");
         t.add("D");
         t.add("C");
         t.add("F");
         t.add("E");
-        System.out.println(t.add("A")); // false
 
-        // t.add(1); // ClassCastException heterogeneous elements not allowed in TreeMap
-
-        // t.add(null); //null ptr
-
-        // t.add(new StringBuffer("g")); //java.lang.StringBuffer cannot be cast to java.lang.Comparable
-
-        System.out.println(t); // [A, B, C, D, E, F]
+        // methods of Sorted Set interface
+        System.out.println("methods of Sorted Set interface");
+        System.out.println("first : " + t.first());
+        System.out.println("last : " + t.last());
+        System.out.println("headSet : " + t.headSet("C"));
+        System.out.println("tailSet : " + t.tailSet("C"));
+        System.out.println("subSet : " + t.subSet("B", "F"));
     }
 }

@@ -22,7 +22,7 @@ public class IteratorDemo {
             list.add(i);
         }
 
-        System.out.println(list);
+        System.out.println(list); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
         Iterator itrtr = list.iterator();
 
@@ -34,6 +34,6 @@ public class IteratorDemo {
                 itrtr.remove();
             }
         }
-        System.out.println(list);
+        System.out.println(list); // [0, 2, 4, 6, 8, 10]
     }
 }

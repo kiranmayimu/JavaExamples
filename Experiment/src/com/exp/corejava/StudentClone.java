@@ -6,28 +6,23 @@
  */
 package com.exp.corejava;
 
-import java.io.IOException;
-
 /**
  * @author kiranmayi.mu
  *
  */
-public class A {
+public class StudentClone implements Cloneable {
 
-    final String        str1;
-    final static String str2;
+    int    eid;
+    String name;
 
-    {
-        str1 = "kiran";
+    public StudentClone(final int eid, final String name) {
+        this.eid = eid;
+        this.name = name;
     }
 
-    static {
-        str2 = "mayi";
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
-    int num = 10;
-
-    public int add(final int a, final int b) throws IOException {
-        return a;
-    }
 }

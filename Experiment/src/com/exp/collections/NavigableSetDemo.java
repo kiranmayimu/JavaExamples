@@ -6,6 +6,7 @@
  */
 package com.exp.collections;
 
+import java.util.NavigableSet;
 import java.util.TreeSet;
 
 /**
@@ -16,7 +17,7 @@ public class NavigableSetDemo {
 
     public static void main(final String[] args) {
 
-        TreeSet t = new TreeSet<>();
+        NavigableSet t = new TreeSet<>();
 
         t.add(2);
         t.add(3);
@@ -24,7 +25,7 @@ public class NavigableSetDemo {
         t.add(6);
         t.add(9);
 
-        System.out.println(t);
+        System.out.println(t);// [2, 3, 5, 6, 9]
 
         System.out.println("floor : " + t.floor(10));
         System.out.println("lower : " + t.lower(0));

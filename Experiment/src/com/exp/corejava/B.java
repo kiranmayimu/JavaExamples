@@ -6,6 +6,8 @@
  */
 package com.exp.corejava;
 
+import java.io.FileNotFoundException;
+
 /**
  * @author kiranmayi.mu
  *
@@ -13,6 +15,11 @@ package com.exp.corejava;
 public class B extends A {
 
     int num = 20;
+
+    @Override
+    public int add(final int a, final int b) throws ArithmeticException, FileNotFoundException {
+        return a;
+    }
 
     public static void main(final String[] args) {
 

@@ -21,8 +21,8 @@ public class MyStringComparator implements Comparator {
 
         String s2 = (String) b;
 
-        // return s2.compareTo(s1);
+        // return s2.compareTo(s1); // descending
 
-        return -s1.compareTo(s2);
+        return -s1.compareTo(s2); // descending
     }
 }

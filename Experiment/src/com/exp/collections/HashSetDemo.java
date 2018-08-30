@@ -6,15 +6,27 @@
  */
 package com.exp.collections;
 
+import java.util.HashSet;
+
 /**
  * @author kiranmayi.mu
  *
  */
-public class TestComparable {
+public class HashSetDemo {
 
     public static void main(final String[] args) {
-        System.out.println("A".compareTo("Z"));
-        System.out.println("D".compareTo("A"));
-        System.out.println("A".compareTo("A"));
+
+        HashSet hs = new HashSet<>();
+
+        hs.add("one");
+        hs.add("two");
+        hs.add("one"); // false
+
+        System.out.println(hs); // [one, two]
+        System.out.println(hs.size()); // 2
+
+        hs.remove("one");
+        System.out.println(hs); // [two]
+        System.out.println(hs.size()); // 1
     }
 }

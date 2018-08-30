@@ -41,6 +41,8 @@ public class HashMapDemo {
 
         System.out.println(map.put(null, "kiran"));
 
+        System.out.println("Map set is : " + map);
+
         Set s = map.keySet();
         System.out.println("Key set is : " + s);
 

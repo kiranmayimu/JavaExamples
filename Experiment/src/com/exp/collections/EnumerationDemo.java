@@ -23,14 +23,14 @@ public class EnumerationDemo {
             v.addElement(i);
         }
 
-        System.out.println(v);
+        System.out.println(v); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
         Enumeration e = v.elements();
 
         while (e.hasMoreElements()) {
             int a = (int) e.nextElement();
             if ((a % 2) == 0) {
-                System.out.println(a);
+                System.out.println(a); // even numbers
             }
         }
     }

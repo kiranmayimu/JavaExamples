@@ -14,20 +14,13 @@ import java.util.TreeMap;
  */
 public class TreeMapDemo {
 
-    int add(final int a, final int b, final int c) {
-        return 4;
-    }
-
-    void add(final int a, final int b) {
-
-    }
-
     public static void main(final String[] args) {
 
         TreeMap t = new TreeMap<>();
 
         t.put(3, "a");
         t.put(4, "b");
+        t.put(4, "n");
         t.put(2, "c");
         t.put(1, "d");
         t.put(6, null);
@@ -36,6 +29,6 @@ public class TreeMapDemo {
 
         // t.put(null, "d"); // Null pointer key cannot be null
 
-        System.out.println(t);
+        System.out.println(t); // {1=d, 2=c, 3=a, 4=n, 6=null}
     }
 }

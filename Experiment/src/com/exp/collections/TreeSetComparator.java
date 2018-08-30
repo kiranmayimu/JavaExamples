@@ -19,7 +19,7 @@ public class TreeSetComparator implements Comparator<Integer> {
 
         // return a.compareTo(b); // natural order
 
-        // return b.compareTo(a); // descending order
+        return b.compareTo(a); // descending order
 
         // return -b.compareTo(a); // natural order
 
@@ -29,6 +29,6 @@ public class TreeSetComparator implements Comparator<Integer> {
 
         // return -1; // Reverse order
 
-        return 0; // Only the first element
+        // return 0; // Only the first element
     }
 }
