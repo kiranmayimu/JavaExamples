@@ -20,14 +20,21 @@ public class StackDemo {
         s.push("A");
         s.push("C");
         s.push("B");
+        s.push(null);
         s.push("D");
 
-        System.out.println(s); // [A, C, B, D]
+        System.out.println(s); // [A, C, B, null, D]
 
         System.out.println(s.peek()); // LIFO - D
 
         System.out.println(s.search("A")); // 4 - offset
         System.out.println(s.search("Z")); // -1 if element is not present
+
+        System.out.println(s.pop());
+        System.out.println(s); // [A, C, B, null]
+
+        System.out.println(s.pop());
+        System.out.println(s); // [A, C, B]
 
         System.out.println(s.empty()); // false
     }

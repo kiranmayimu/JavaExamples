@@ -18,6 +18,7 @@ public class HashSetDemo {
 
         HashSet hs = new HashSet<>();
 
+        hs.add(null);
         hs.add("one");
         hs.add("two");
         hs.add("one"); // false

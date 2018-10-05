@@ -25,7 +25,7 @@ public class CollectionsSearchDemo {
 
         // natural sorting order
         Collections.sort(list);
-        System.out.println("Afetr sorting" + list);
+        System.out.println("Afetr sorting" + list); // [a, b, l, r]
         System.out.println(Collections.binarySearch(list, "a")); // index
         System.out.println(Collections.binarySearch(list, "d")); // insertion point
 

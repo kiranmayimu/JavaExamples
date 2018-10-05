@@ -8,7 +8,7 @@ package com.exp.corejava;
 
 /**
  * @author kiranmayi.mu
- *
+ * 
  */
 public class InterviewQuestions {
 
@@ -30,10 +30,14 @@ public class InterviewQuestions {
         long[] b1 = fix(a1);
         System.out.println(a1[0] + a1[1] + a1[2] + "");
         System.out.println(b1[0] + b1[1] + b1[2]);
+
+        // 3
+        System.out.println(88 << 3); // 20
     }
 
     private static long[] fix(final long[] a1) {
         a1[1] = 7;
         return a1;
     }
+
 }

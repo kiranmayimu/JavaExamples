@@ -27,11 +27,11 @@ public class NavigableSetDemo {
 
         System.out.println(t);// [2, 3, 5, 6, 9]
 
-        System.out.println("floor : " + t.floor(10));
+        System.out.println("floor : " + t.floor(9));
         System.out.println("lower : " + t.lower(0));
 
-        System.out.println("ceiling : " + t.ceiling(5));
-        System.out.println("higher : " + t.higher(9));
+        System.out.println("ceiling : " + t.ceiling(9));
+        System.out.println("higher : " + t.higher(5));
 
         System.out.println("pollFirst : " + t.pollFirst());
         System.out.println("pollLast : " + t.pollLast());
